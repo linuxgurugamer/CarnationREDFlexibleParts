@@ -61,6 +61,9 @@
     <Reference Include="$(KSPDIR)\KSP_x64_Data\Managed\UnityEngine*.dll">
       <Private>False</Private>
     </Reference>
+    <Reference Include="999_Scale_Redist">
+      <HintPath>$(KSPDIR)\GameData\999_Scale_Redist.dll</HintPath>
+    </Reference>
     <Reference Include="FerramAerospaceResearch">
       <HintPath>$(KSPDIR)\GameData\FerramAerospaceResearch\Plugins\FerramAerospaceResearch.dll</HintPath>
     </Reference>
