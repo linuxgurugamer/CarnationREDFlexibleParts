@@ -64,8 +64,14 @@
     <Reference Include="FerramAerospaceResearch">
       <HintPath>$(KSPDIR)\GameData\FerramAerospaceResearch\Plugins\FerramAerospaceResearch.dll</HintPath>
     </Reference>
+    <Reference Include="KSPe.Light.TweakScale">
+      <HintPath>$(KSPDIR)\GameData\TweakScale\Plugins\KSPe.Light.TweakScale.dll</HintPath>
+    </Reference>
     <Reference Include="RealFuels">
       <HintPath>$(KSPDIR)\GameData\RealFuels\Plugins\RealFuels.dll</HintPath>
+    </Reference>
+    <Reference Include="Scale">
+      <HintPath>$(KSPDIR)\GameData\TweakScale\Plugins\Scale.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
