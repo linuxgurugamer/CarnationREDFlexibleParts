@@ -35,7 +35,7 @@
 2:UI,UI/UI.csproj,CarnationREDFlexibleParts.version,GameData/CarnationREDFlexiblePart/Plugins
 
 # 3:SOURCEFILE, DESTDIR
-3:CarnationREDFlexibleParts.version,GameData/CarnationREDFlexibleParts
+3:CarnationREDFlexibleParts.version,GameData/CarnationREDFlexiblePart
 #3:LICENSE.md,GameData/KerbalHotSeat
 #3:README.md,GameData/KerbalHotSeat
 
