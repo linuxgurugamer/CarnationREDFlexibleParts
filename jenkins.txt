@@ -28,10 +28,11 @@
 # 0:1.3
 
 # 1:GAMEDIR, VERSIONFILE [, GITHUBREPO ]
-1:CarnationREDFlexibleParts, CarnationREDFlexibleParts.version
+1:CarnationREDFlexiblePart, CarnationREDFlexibleParts.version
 
 # 2:PROJNAME, PROJFILE, VERSIONFILE, PLUGINSFOLDER
-2:CarnationREDFlexibleParts,CarnationREDFlexibleParts/KerbalHotSeat.csproj,CarnationREDFlexibleParts.version,GameData/CarnationREDFlexibleParts/Plugins
+2:Main,Main/Main.csproj,CarnationREDFlexibleParts.version,GameData/CarnationREDFlexiblePart/Plugins
+2:UI,UI/UI.csproj,CarnationREDFlexibleParts.version,GameData/CarnationREDFlexiblePart/Plugins
 
 # 3:SOURCEFILE, DESTDIR
 3:CarnationREDFlexibleParts.version,GameData/CarnationREDFlexibleParts
