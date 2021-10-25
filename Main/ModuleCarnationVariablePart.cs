@@ -59,14 +59,14 @@ namespace CarnationVariableSectionPart
         {
             var sec = id > 3 ? Section1Radius : Section0Radius;
             id %= 4;
-            return id switch
+            switch( id)
             {
-                0 => sec.x,
-                1 => sec.y,
-                2 => sec.z,
-                _ => sec.w,
+                case 0: return  sec.x;
+                case 1:return  sec.y;
+                case 2: return sec.z;
+                default: return sec.w;
             };
-            ;
+            
         }
         public void SetCornerRadius(int id, float value)
         {
