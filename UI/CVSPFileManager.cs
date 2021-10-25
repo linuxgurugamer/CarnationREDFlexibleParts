@@ -17,7 +17,7 @@ namespace CarnationVariableSectionPart.UI
         public static string TxeturePath = Assembly.GetAssembly(typeof(CVSPFileSelector)).Location;
         static CVSPFileManager()
         {
-            TxeturePath = TxeturePath.Remove(TxeturePath.LastIndexOf("Plugins")) + @"Texture"/* + Path.DirectorySeparatorChar*/;
+            TxeturePath = TxeturePath.Remove(TxeturePath.LastIndexOf("Plugins")) + @"PluginData/Texture"/* + Path.DirectorySeparatorChar*/;
         }
 #endif
         [SerializeField]
@@ -163,13 +163,22 @@ namespace CarnationVariableSectionPart.UI
                 selectedFileName = go.GetComponentInChildren<Text>();
                 UpdatePreview();
                 Transform listT = fileList.transform;
+                Debug.Log("CarnationRed: FileClicked 1, index: " + index + ", listT.childCount: " + listT.childCount);
+                if (index >= listT.childCount)
+                    index = 0;
                 if (listT.GetChild(index) != selectedFileName.transform.parent)
+                {
+                    Debug.Log("CarnationRed: FileClicked 2, index: " + index);
                     for (int i = listT.childCount - 1; i >= 2; i--)
+                    {
+                        Debug.Log("CarnationRed: FileClicked 3, i: " + i);
                         if (listT.GetChild(i) == selectedFileName.transform.parent)
                         {
                             index = i;
                             break;
                         }
+                    }
+                }
             }
             if (Time.unscaledTime - lastClickTime < 0.5f && (Input.mousePosition - lastClickPos).sqrMagnitude < 100f)
                 OnOpenClick();

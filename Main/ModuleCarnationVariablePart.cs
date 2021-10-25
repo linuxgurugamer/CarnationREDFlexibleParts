@@ -36,7 +36,7 @@ namespace CarnationVariableSectionPart
     ///     12.切分零件、合并零件，且不改变形状
     ///     13.done RO\RF
     ///     14.done 隐藏堆叠部件的相邻Mesh
-    /// BUG:
+    /// BUG:ModuleCarnationVariablePart
     ///     1.closed 体积和燃料对应好像有点问题
     ///     2.closed 形状比较夸张时，UV和法线比较怪（没有细分就是这样的）
     /// </summary>

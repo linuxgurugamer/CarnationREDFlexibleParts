@@ -28,7 +28,7 @@ namespace CarnationVariableSectionPart.UI
         #region Test
         [Range(0, 5)] public float w, h;
         [Range(0, 1)] public float r0, r1, r2, r3;
-        public string name = "unnamed";
+        public new string name = "unnamed";
         #endregion
 
         //private const string PRESETFILE = "CRFPPresets.ini";
