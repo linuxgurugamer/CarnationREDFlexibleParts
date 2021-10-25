@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarnationVariableSectionPart
 {
-    interface IParameterMonitor
+    internal interface IParameterMonitor
     {
         internal float LastEvaluatedTime { get; set; }
         internal List<object> OldValues { get; set; }
