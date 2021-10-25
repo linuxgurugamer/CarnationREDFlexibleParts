@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CarnationVariableSectionPart
 {
-    internal interface IParameterMonitor
+    interface IParameterMonitor
     {
-        internal float LastEvaluatedTime { get; set; }
-        internal List<object> OldValues { get; set; }
-        internal bool CachedValueChangedInCurrentFrame { get; set; }
-        internal bool IgnoreValueChangeOnce { get; set; }
+        float LastEvaluatedTime { get; set; }
+        List<object> OldValues { get; set; }
+        bool CachedValueChangedInCurrentFrame { get; set; }
+        bool IgnoreValueChangeOnce { get; set; }
     }
 }
