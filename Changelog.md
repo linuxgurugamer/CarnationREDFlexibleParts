@@ -1,5 +1,8 @@
 Changelog
 
+0.7.0.1 
+	Fixed loading of initial dds textures, changed location of folder caused an error
+
 0.7.0.0
 	Adoption by Linuxgurugamer
 	Fixed names of two part config files (no dot before cfg)	

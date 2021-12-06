@@ -628,7 +628,7 @@ namespace CarnationVariableSectionPart
                 Fields["dryMass"].guiActive = false;
             if (DefaultTexuresLoaded) return;
             TextureFolderPath = (typeof(ModuleCarnationVariablePart).Assembly.Location);
-            TextureFolderPath = TextureFolderPath.Remove(TextureFolderPath.LastIndexOf("Plugins")) + @"Texture" + Path.DirectorySeparatorChar;
+            TextureFolderPath = TextureFolderPath.Remove(TextureFolderPath.LastIndexOf("Plugins")) +"PluginData" + Path.DirectorySeparatorChar + @"Texture" + Path.DirectorySeparatorChar;
             defaultSideDiff = CVSPUIManager.LoadTextureFromFile(TextureFolderPath + "side_d.dds", false);
             defaultSideNorm = CVSPUIManager.LoadTextureFromFile(TextureFolderPath + "side_n.dds", false);
             defaultSideSpec = CVSPUIManager.LoadTextureFromFile(TextureFolderPath + "side_s.dds", false);
