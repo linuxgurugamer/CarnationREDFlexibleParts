@@ -31,8 +31,8 @@
 1:CarnationREDFlexiblePart, CarnationREDFlexibleParts.version
 
 # 2:PROJNAME, PROJFILE, VERSIONFILE, PLUGINSFOLDER
-2:Main,Main/Main.csproj,CarnationREDFlexibleParts.version,GameData/CarnationREDFlexiblePart/Plugins
 2:UI,UI/UI.csproj,CarnationREDFlexibleParts.version,GameData/CarnationREDFlexiblePart/Plugins
+2:Main,Main/Main.csproj,CarnationREDFlexibleParts.version,GameData/CarnationREDFlexiblePart/Plugins
 
 # 3:SOURCEFILE, DESTDIR
 3:CarnationREDFlexibleParts.version,GameData/CarnationREDFlexiblePart
