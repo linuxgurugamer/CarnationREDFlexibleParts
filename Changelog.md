@@ -1,5 +1,8 @@
 Changelog
 
+0.7.0.2
+	Fixed bad build
+
 0.7.0.1 
 	Fixed loading of initial dds textures, changed location of folder caused an error
 
