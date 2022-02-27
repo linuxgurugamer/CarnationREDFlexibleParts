@@ -16,7 +16,7 @@ namespace CarnationVariableSectionPart
         private static List<TankTypeDefinition> tankDefinitions;
         private static List<TextureSetDefinition> textureSets;
         private static Dictionary<string, float> fuelAmountPerVolume;
-        private static readonly string CRFPConfigPath;
+        private static string CRFPConfigPath;
         private static bool realFuel = false;
         private static bool RFChecked = false;
         private static bool far = false;
@@ -146,9 +146,14 @@ namespace CarnationVariableSectionPart
                 return maxLength;
             }
         }
-        static CVSPConfigs()
+        CVSPConfigs()
         {
+            Debug.Log("CVSPConfigs 1");
             CRFPConfigPath = Assembly.GetAssembly(typeof(CVSPConfigs)).Location;
+            Debug.Log("CVSPConfigs 2");
+            if (CRFPConfigPath != null)
+                Debug.Log("CVSPConfigs 2, CRFPConfigPath: " + CRFPConfigPath);
+
             CRFPConfigPath = CRFPConfigPath.Remove(CRFPConfigPath.LastIndexOf("Plugins"));
             LoadCRFPSettings();
             //LoadFromStringArray = typeof(ConfigNode).GetMethods(BindingFlags.NonPublic | BindingFlags.Static).FirstOrDefault(q => q.Name == "LoadFromStringArray" && q.GetParameters().Length < 2);
