@@ -1,5 +1,11 @@
 Changelog
 
+0.7.0.4
+	Fixed path for loading images (broken by new launcher)
+
+0.7.0.3
+	Fixed loading of texture (broken by new launcher)
+
 0.7.0.2
 	Fixed bad build
 

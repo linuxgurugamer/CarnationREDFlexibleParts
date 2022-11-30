@@ -188,7 +188,9 @@ namespace CarnationVariableSectionPart
 
         internal static void Reload()
         {
-            UrlDir urlDir = new UrlDir(new UrlDir.ConfigDirectory[] { new UrlDir.ConfigDirectory("", "GameData", UrlDir.DirectoryType.GameData) },
+            //UrlDir urlDir = new UrlDir(new UrlDir.ConfigDirectory[] { new UrlDir.ConfigDirectory("", "GameData", UrlDir.DirectoryType.GameData) },
+            //                           new UrlDir.ConfigFileType[] { new UrlDir.ConfigFileType(UrlDir.FileType.Config) });
+            UrlDir urlDir = new UrlDir(new UrlDir.ConfigDirectory[] { new UrlDir.ConfigDirectory(KSPUtil.ApplicationRootPath, "GameData", UrlDir.DirectoryType.GameData) },
                                        new UrlDir.ConfigFileType[] { new UrlDir.ConfigFileType(UrlDir.FileType.Config) });
 
             tankDefinitions = LoadFuelTankDefinitions(GetNodes(urlDir, "CRFPTankTypeDefinition").ToArray());
