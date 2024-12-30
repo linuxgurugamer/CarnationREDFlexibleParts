@@ -1,5 +1,9 @@
 Changelog
 
+0.7.0.5
+	Updated version file to use github for new version info
+	Copied full web page to README-WEB.md
+
 0.7.0.4
 	Fixed path for loading images (broken by new launcher)
 

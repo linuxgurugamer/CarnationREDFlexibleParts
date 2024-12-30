@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29926.136
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{D33B31CD-0EE0-4BAD-AF4C-C21E13C38ABC}"
 EndProject
@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		deploy.bat = deploy.bat
 		jenkins.txt = jenkins.txt
 		LICENSE.txt = LICENSE.txt
+		README-WEB.md = README-WEB.md
 		README.md = README.md
 		Textures_README_UPDATE.txt = Textures_README_UPDATE.txt
 	EndProjectSection
